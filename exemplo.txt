@@ -1,0 +1,7 @@
+num x = 10;
+se (x > 5) {
+    num y = 20;
+    y = y + 1;
+} altrimenti {
+    num z = 30;
+}

@@ -1,0 +1,14 @@
+ÁRVORE DE SINTAXE (AST)
+(program (initialStatement (varDecl (type num) x = (expr 10) ;)) (initialStatement (ifStmt se ( (expr (expr x) > (expr 5)) ) (statement (block { (statement (varDecl (type num) y = (expr 20) ;)) (statement (exprStmt (expr (expr y = (expr y)) + (expr 1)) ;)) })) altrimenti (statement (block { (statement (varDecl (type num) z = (expr 30) ;)) })))) <EOF>)
+
+
+TABELA DE SÍMBOLOS
+NOME	|	TIPO	|	ESCOPO
+------------------------------------------
+x	|	num	|	Global
+y	|	num	|	Local (Nível 1)
+z	|	num	|	Local (Nível 1)
+
+
+RESULTADO SEMÂNTICO
+Análise semântica concluída sem erros!
